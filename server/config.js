@@ -10,7 +10,7 @@ if (result.error) {
 const { parsed: envs } = result;
 console.log(envs);
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 54322
 const pool = new Pool({
     host: process.env.PGHOST,
     user: process.env.PGUSER,
