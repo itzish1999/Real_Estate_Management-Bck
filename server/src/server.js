@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 4000;
 
 const app = express();
 app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "http://re-mngmnt-frnt.herokuapp.com/");
+    res.header("Access-Control-Allow-Origin", "*");
     next();
 });
 
