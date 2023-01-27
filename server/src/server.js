@@ -1,10 +1,11 @@
 const express = require("express");
-const { PORT } = require("../config");
 const properties = require("../properties.json")
+
+const PORT = 1000;
 
 const app = express();
 app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+    res.header("Access-Control-Allow-Origin", "https://re-mngmnt-frnt.herokuapp.com/");
     next();
 });
 
