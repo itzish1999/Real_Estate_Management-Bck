@@ -1,7 +1,7 @@
 const express = require("express");
 const properties = require("../properties.json")
 
-const PORT = 1000;
+const PORT = 5432;
 
 const app = express();
 app.use((req, res, next) => {
